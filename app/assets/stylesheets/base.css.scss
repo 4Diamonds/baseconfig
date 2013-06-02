@@ -1,0 +1,171 @@
+
+body {
+  background: #f3f3f3 url('body-background.png') repeat-x center top;
+}
+
+#page {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#page-session {
+  padding: 6px 0;
+  position: relative;
+  font-size: 13px;
+  text-shadow: 0 1px 0 #ffdc00;
+  
+  a {
+    font-weight: bold;
+    color: #444;
+  }
+  
+  nav {
+    position: absolute;
+    top: 0px; right: 0;
+  }
+  
+  nav a {
+    display: inline-block;
+    padding: 6px 12px;
+  }  
+  
+  nav .register {
+    background: #ffdc00;
+  }
+  
+  .city {
+    color: #444;
+    
+    a { 
+      color: #333; 
+      margin-left: 5px 
+    }
+  }
+}
+
+#page-logo {
+  float: left;
+  margin-top: 5px;
+}
+
+#page-header {
+  height: 92px;
+  background: url('header-background.png') no-repeat center right;
+}
+
+#page-nav {
+  height: 48px;
+  
+  a {
+    float: left;
+    font-size: 16px; 
+    font-weight: bold;
+    color: #333;
+    text-shadow: 1px 1px 1px white;
+    margin: 15px 25px 0 0;
+  } 
+}
+
+fieldset {
+  
+  label {
+    display: block;
+  }
+}
+
+#contract {
+  max-height: 350px;
+  font: normal 13px/18px 'Arial', sans-serif;
+  overflow: auto;
+}
+
+.table {
+  margin: 20px 0;
+    
+  .btn {
+    margin-right: 5px;
+  }
+  
+  h3 {
+    margin: 3px 0;
+    font-size: 16px;
+  }
+}
+
+.list {  
+  li { 
+    padding: 10px;
+    border-bottom: 1px dotted #DDD;
+    margin-right: 25px;
+  }
+  
+  h3 {
+    margin: 0;
+  }
+}
+
+.showcase li, .list li {
+  width: 180px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.showcase {
+  margin: 20px 0;
+  
+  li {
+    padding: 10px;
+    border: 2px solid #DDD;
+    margin: 10px;
+    background: #EEE;
+    height: 200px;
+  }
+  
+  figure {
+    margin: 0;
+    background: white;
+    text-align: center;
+  }
+  
+  img {
+    max-width: 120px;
+  }
+  
+  h3 {
+    font-size: 16px;
+  }
+}
+
+.btn {
+  padding: 5px 12px;
+  background: #BBB;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  font: normal 14px sans-serif;
+  
+  &.small {
+    font-size: 12px;
+  }
+  
+  &.large {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+  
+  &:hover {
+    color: white;
+    background: #AAA;
+  }
+}
+
+#notice {
+  padding: 10px;
+  background: #FFBABA;
+  color: #C24848;
+  font-weight: bold;
+  margin-top: 15px;
+}

@@ -1,0 +1,30 @@
+doctype 5
+html
+  head
+    title Worker Finder-Admin&reg;
+    = stylesheet_link_tag    "application", media: "all"
+    = javascript_include_tag "application"
+    link rel="shortcut icon" href="/assets/favicon.ico"
+    = csrf_meta_tags
+  body
+    #page
+      #page-session
+        .city
+          strong 
+            - unless current_admin.blank?
+              h Ola Admin: #{current_admin}
+            - else
+              h Squarebits
+          span
+        nav= render 'devise/shared/user_session'
+      #page-header
+        = link_to(image_tag("logo.png", alt: "Worker Finder"), root_path, title: "Página Inicial", id: 'page-logo')
+      nav#page-nav
+        - unless current_admin.blank?
+          = link_to 'Configurations', [:admin, :baseconfigs]
+          = link_to 'Cash-Flow'
+        
+
+      #page-content= yield
+      footer#page-footer
+        small &copy; Squarebits Software 2013.

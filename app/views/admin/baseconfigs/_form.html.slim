@@ -1,0 +1,7 @@
+= simple_form_for [:edit, :admin, @baseconfig] do |f|
+  fieldset 
+    = f.error_notification
+    = f.input :need
+    = f.input :offer
+    = f.input :start
+  = f.button :submit

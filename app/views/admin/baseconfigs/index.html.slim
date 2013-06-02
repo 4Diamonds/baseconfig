@@ -1,0 +1,24 @@
+h1 Listing Configs
+
+- if notice
+ #notice= notice
+
+table
+  tr
+    th Need price
+    th Offer price
+    th Start bonus
+    th
+    
+    
+  - @baseconfigs.each do |baseconfig|
+    tr
+      td= number_to_currency(baseconfig.need)
+      td= number_to_currency(baseconfig.offer)
+      td= number_to_currency(baseconfig.start)
+      td
+        = link_to 'Edit', [:edit, :admin, baseconfig], class: "btn"
+        
+p
+  /= link_to 'New Configuration', [:new, :admin, :baseconfig], class: "btn"
+  = link_to 'Voltar', :back, class: "btn"

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  need: 1.5
+  offer: 1.5
+  start: 1.5
+
+two:
+  need: 1.5
+  offer: 1.5
+  start: 1.5

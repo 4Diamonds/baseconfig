@@ -1,0 +1,6 @@
+- if current_admin.present?
+  = link_to "Change Password", [:edit, :admin, :password], title: "Change"
+  = link_to "Sair", [:destroy, :admin, :session], title: "Sair", method: :delete
+- else
+  = link_to "Login", [:new, :admin, :session], title: "dmin Login"
+  
